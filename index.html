@@ -37,10 +37,6 @@ font-size:28px;
 margin-bottom:10px;
 }
 
-header p{
-font-size:18px;
-}
-
 /* セクション */
 
 section{
@@ -59,7 +55,7 @@ font-size:22px;
 margin-bottom:20px;
 }
 
-/* カード */
+/* サービスカード */
 
 .service{
 background:white;
@@ -74,25 +70,33 @@ transition:0.3s;
 transform:translateY(-4px);
 }
 
+/* ボタンエリア */
+
+.cta{
+display:flex;
+flex-direction:column;
+gap:12px;
+margin-top:20px;
+}
+
 /* ボタン */
 
 .button{
 display:block;
-background:#ff7eb3;
-color:white;
-padding:18px;
+background:linear-gradient(135deg,#ff9ecb,#8be4de);
+color:#333;
+padding:16px;
 text-align:center;
 border-radius:30px;
-font-size:20px;
+font-size:19px;
 text-decoration:none;
-margin-top:15px;
-box-shadow:0 5px 14px rgba(0,0,0,0.15);
+box-shadow:0 4px 12px rgba(0,0,0,0.12);
 transition:0.3s;
 }
 
 .button:hover{
-background:#ff5fa2;
 transform:translateY(-2px);
+opacity:0.95;
 }
 
 /* お問い合わせ */
@@ -115,7 +119,7 @@ margin-top:40px;
 font-size:14px;
 }
 
-/* アニメーション */
+/* アニメ */
 
 @keyframes fadeIn{
 from{
@@ -127,8 +131,6 @@ opacity:1;
 transform:translateY(0);
 }
 }
-
-/* スマホ */
 
 @media(max-width:600px){
 
@@ -149,20 +151,27 @@ font-size:24px;
 <body>
 
 <header>
+
 <h1>武蔵小金井精神科訪問看護ステーション</h1>
 <p>住み慣れた地域で安心して暮らすためのサポート</p>
 <p>東京都小金井市</p>
+
+<div class="cta">
+
+<a href="tel:0000000000" class="button">
+📞 電話で相談する
+</a>
+
+<a href="mailto:example@mail.com" class="button">
+✉ メールで相談する
+</a>
+
+</div>
+
 </header>
 
 <section>
 
-<a href="tel:0000000000" class="button">📞 電話で相談する</a>
-
-<a href="mailto:example@mail.com" class="button">✉ メールで相談する</a>
-
-</section>
-
-<section>
 <h2>私たちについて</h2>
 
 <p>
@@ -206,7 +215,7 @@ font-size:24px;
 </div>
 
 <div class="service">
-<h3>24時間相談対応</h3>
+<h3>ご相談対応</h3>
 <p>
 緊急時の相談や体調変化への対応を行います。
 </p>
@@ -245,9 +254,8 @@ font-size:24px;
 下記までお気軽にご連絡ください。
 </p>
 
-<a href="tel:0000000000" class="button">📞 電話する</a>
-
-<a href="mailto:example@mail.com" class="button">✉ メールする</a>
+<p><strong>電話：</strong></p>
+<p><strong>メール：</strong></p>
 
 </section>
 
