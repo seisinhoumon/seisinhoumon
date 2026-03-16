@@ -1,62 +1,131 @@
-"<!DOCTYPE html>
-<html lang=""ja"">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-    
-    <meta name="description" content="東京都小金井市で開業準備中の精神科訪問看護ステーションです。精神科看護の経験豊富な看護師が、住み慣れた地域で安心して暮らすためのサポート（服薬管理・生活支援など）を提供します。">
 
-    
-<meta charset=""UTF-8"">
-<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+<meta name="description" content="東京都小金井市で開業準備中の精神科訪問看護ステーションです。精神科看護の経験豊富な看護師が、住み慣れた地域で安心して暮らすためのサポート（服薬管理・生活支援など）を提供します。">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>武蔵小金井精神科訪問看護ステーション | 小金井市</title>
 
 <style>
+
 body{
-font-family: ""Hiragino Kaku Gothic ProN"", sans-serif;
+font-family:"Hiragino Kaku Gothic ProN", sans-serif;
 margin:0;
 color:#333;
-line-height:1.7;
+line-height:1.9;
+font-size:18px;
+background:linear-gradient(180deg,#fdfbfb,#ebedee);
 }
 
+/* シティポップ風ヘッダー */
+
 header{
-background:#4CAF50;
+background:linear-gradient(135deg,#ff7eb3,#65d6ce);
 color:white;
 text-align:center;
-padding:40px 20px;
+padding:60px 20px;
+animation:fadeIn 1.2s ease;
+}
+
+header h1{
+font-size:28px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:18px;
+}
+
+/* セクション */
+
+section{
+padding:35px 20px;
+max-width:760px;
+margin:auto;
+animation:fadeIn 1s ease;
+}
+
+/* 見出し */
+
+h2{
+border-left:6px solid #ff7eb3;
+padding-left:12px;
+font-size:22px;
+margin-bottom:20px;
+}
+
+/* カード */
+
+.service{
+background:white;
+padding:22px;
+margin-bottom:18px;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+transition:transform .25s;
+}
+
+.service:hover{
+transform:translateY(-4px);
+}
+
+/* お問い合わせ */
+
+.contact{
+background:linear-gradient(135deg,#e0f7fa,#fce4ec);
+padding:22px;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* フッター */
+
+footer{
+background:#2c2c2c;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+font-size:14px;
+}
+
+/* アニメーション */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* iモード風スマホ最適化 */
+
+@media(max-width:600px){
+
+body{
+font-size:19px;
+}
+
+header h1{
+font-size:24px;
 }
 
 section{
-padding:40px 20px;
-max-width:900px;
-margin:auto;
+padding:30px 18px;
 }
 
-h2{
-border-left:6px solid #4CAF50;
-padding-left:10px;
-}
-
-.service{
-background:#f7f7f7;
-padding:20px;
-margin-bottom:20px;
-border-radius:10px;
-}
-
-footer{
-background:#333;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-
-.contact{
-background:#e8f5e9;
-padding:20px;
-border-radius:10px;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -83,7 +152,7 @@ border-radius:10px;
 <section>
 <h2>サービス内容</h2>
 
-<div class=""service"">
+<div class="service">
 <h3>精神科訪問看護</h3>
 <p>
 精神科の症状を抱える方のご自宅へ訪問し、
@@ -91,7 +160,7 @@ border-radius:10px;
 </p>
 </div>
 
-<div class=""service"">
+<div class="service">
 <h3>服薬管理</h3>
 <p>
 お薬の管理や服薬継続のサポートを行い、
@@ -99,7 +168,7 @@ border-radius:10px;
 </p>
 </div>
 
-<div class=""service"">
+<div class="service">
 <h3>生活支援</h3>
 <p>
 生活リズムの調整や対人関係の相談など、
@@ -107,7 +176,7 @@ border-radius:10px;
 </p>
 </div>
 
-<div class=""service"">
+<div class="service">
 <h3>24時間相談対応</h3>
 <p>
 緊急時の相談や体調変化への対応を行います。
@@ -134,7 +203,7 @@ border-radius:10px;
 
 </section>
 
-<section class=""contact"">
+<section class="contact">
 <h2>お問い合わせ</h2>
 
 <p>
@@ -148,8 +217,8 @@ border-radius:10px;
 </section>
 
 <footer>
-<p>© 武蔵小金井精神訪問看護ステーション</p>
+<p>©武蔵小金井精神訪問看護ステーション 2026 All Rights Reserve</p>
 </footer>
 
 </body>
-</html>"
+</html>
